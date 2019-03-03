@@ -106,9 +106,10 @@ body {
 }
 
 .greytop{
-	background-color:rgba(0,0,0,0.94);
+	background-color:rgba(0,0,0,0);
 	height:80vh;
 	width:;
+	border-color:0;
 
 }
 
@@ -118,10 +119,12 @@ body {
 }
 
 .main-menu li{
-	margin:auto;
-	display:inline;
+	background-color: rgba(0,0,0,0.8);
+	display:block;
 	text-decoration: none;
 	font-weight: bold;
 	padding:15px;
+	font-size: 25px;
+	text-align: center;
 }
 

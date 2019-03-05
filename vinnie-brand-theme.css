@@ -38,6 +38,7 @@ body {
 	top: 90%;
 	transform: translate(-50%,-50%);
 	font-weight: bolder;
+
 }
 
 @keyframes floatin{
@@ -59,6 +60,8 @@ body {
 		opacity:1;
 	}
 }
+
+
 
 .disp {
 	height:100vh;
@@ -86,6 +89,7 @@ body {
 	background: rgba(127, 127, 127, 0.5);
 	background-image: radial-gradient(black 33%, transparent 33%);
 	background-size: 2px 2px;
+	z-index:-1;
 
 
 }

@@ -8,57 +8,32 @@
 </head>
 <body>
 	<!--bootstrap CDN Js Jq-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<div class="container-fluid disp">
-		<div class="row my-pane">
-			<div class="col-12 fit ">
-				<img src="index_img/vinniePromo.gif">
+	<div class="container-fluid" style="height:100vh; background-color: rgb(63,191,218);">
+		<div class="row" style="overflow: hidden;">
+			<div class="col-md-6">
+				<img src="index_img/vinnielogowhite.png"
+				style="width:100%;">
 			</div>
-			<div class="center-logo">
-				<img src="index_img/vinnielogowhite.png">
-			</div>
-			<div class="info-box" style="">
-				<h3 id="name"></h3>
-				<h2 id="location"></h2>
-				<p id="time"></p>
+			<div class="col-md-6">
+				<img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/50843489_10214877274337635_3977694428302147584_n.jpg?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=5d2db6409e78eabc833cd897164083db&oe=5D2759AC"
+				style="width:100%; border: solid white 15px;">
 			</div>
 			<div class="col-12 hover-menu" data-toggle="modal" data-target="#exampleModal">
-				<img src="index_img/vinniefavicon.png"/>
+				<img src="index_img/vinniefaviconwhite.png"/>
 				<h3 id="menu-name" class="" href="" style="display: inline;">MENU</h3>
 			</div>
+
 		</div>
 	</div>
-	<a id="more"></a>
-	<div class="container-fluid console">
-		<div class="row case">
-			<div class="col-md-4 blog-case">
-				<div class="fit2">
-					<img src="index_img/vinnieHeadShot3.jpg">
-				</div>
-				<div class="bord"></div>
-			</div>
-			<div class="col-md-4 blog-case">
-				<div class="fit2">
-					<img src="index_img/vinnieHeadShot2.jpg">
-				</div>
-				<div class="bord"></div>
-			</div>
-			<div class="col-md-4 blog-case">
-				<div class="fit2">
-					<img style="right:0" src="index_img/vinnieHeadShot.jpg">
-				</div>
-				<div class="bord"></div>
-			</div>
-		</div>
-	</div> 
+	
+
 	<!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 	  Launch demo modal
 
-	  Colors: rgb(63,191,218)
+	  Colors: rgb(63,191,218), rgb(255,239,17)
 
 	</button-->
 
@@ -67,10 +42,10 @@
 	  	<div class="modal-dialog " role="document">
 	    	<div class="modal-content greytop">
 	      		<ul class="main-menu">
-	      			<li>HOME</li>
-	      			<li>FOLLOW</li>
-	      			<li>READ</li>
-	      			<li>BOOKING</li>
+	      			<a href="#"><li>HOME</li></a>
+	      			<a href="#"><li>READ</li></a>
+	      			<a href="#"><li>FOLLOW</li></a>
+	      			<a href="#"><li>RESERVE</li></a>
 	      		</ul>
 	    	</div>
 	  	</div>

@@ -38,8 +38,27 @@ body {
 	top: 90%;
 	transform: translate(-50%,-50%);
 	font-weight: bolder;
-
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
+
+#infocenter {
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.info-box div{
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
 
 @keyframes floatin{
   0%{
@@ -71,9 +90,15 @@ body {
 	height: 100%;
 	overflow: hidden;
 	padding:0;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), black);
 }
 
+.dotted {
+	background-image: radial-gradient(black 33%, transparent 33%);
+	background-size: 4px 4px;
+}
+
+.img {}
 
 .fit img {
 	flex:0;
@@ -87,8 +112,7 @@ body {
 	transform: translate(-50%, -50%);
 	overflow: hidden;
 	background: rgba(127, 127, 127, 0.5);
-	background-image: radial-gradient(black 33%, transparent 33%);
-	background-size: 2px 2px;
+	
 	z-index:-1;
 
 
@@ -128,7 +152,6 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	overflow: hidden;
 	
 
 }

@@ -1,29 +1,18 @@
-function fade(element) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            element.style.display = 'none';
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 50);
+function fadeout(element){
+	var el = document.getElementById(element);
+	setTimeout(function(){
+		el.style["visibility"] = "visible";
+		console.log("fadeout");
+	},1000);
 }
 
-function unfade(element) {
-    var op = 0.1;  // initial opacity
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
-    }, 10);
+function fadein(element){
+	var el = document.getElementById(element);
+	setTimeout(function(){
+		el.style["visibility"] = "hidden";
+		console.log("fadein");
+	},1000);
 }
-
 
 function change(value, tlocation){
 	document.getElementById(tlocation).innerHTML = value
@@ -54,7 +43,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	var infobox = document.getElementById();
+	var infobox = document.getElementById("infocenter");
 
 	var shows = [
 		{name:"Stress Factory", 
@@ -69,9 +58,8 @@ $(document).ready(function(){
 	
 	var index = shows.length;
 	var i = 0;
-
+	
 	setInterval(function(){
-
 		if (i == index-1){
 			apply(i,shows);
 			i = 0;
@@ -80,9 +68,9 @@ $(document).ready(function(){
 			apply(i,shows)
 			i = i +1;
 		}
-
-
-	},3000);
+		
+	},4000);
+	
 });
 
 

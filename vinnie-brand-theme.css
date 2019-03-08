@@ -31,33 +31,7 @@ body {
 	
 }
 
-.info-box {
-	position:absolute;
-	z-index:10;
-	left: 50%;
-	top: 90%;
-	transform: translate(-50%,-50%);
-	font-weight: bolder;
-	-webkit-transition: 0.5s ease-in-out;
-	-moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
 
-#infocenter {
-	-webkit-transition: 0.5s ease-in-out;
-	-moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-
-}
-
-.info-box div{
-	-webkit-transition: 0.5s ease-in-out;
-	-moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
 
 
 @keyframes floatin{
@@ -313,5 +287,40 @@ body {
 .card {
 	border:0px;
 	background-color: #000;
-	
+
 }
+
+.info-box {
+	visibility: hidden;
+	position:absolute;
+	z-index:10;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%,-50%);
+	font-weight: bolder;
+	animation: fadein 3s ease;
+}
+
+.info-box: hover {
+	visibility: visible;
+
+}
+
+.custom-menu {
+	padding:0;
+}
+
+.custom-menu li {
+	text-decoration: none;
+	display:inline;
+	padding:10px;
+	margin:auto;
+	font-size: 30px;
+	transition:ease 1s;
+}
+
+.custom-menu:hover li {
+	color: black;
+	background-color: rgba(255,255,255,0.3);
+}
+

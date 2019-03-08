@@ -56,21 +56,6 @@ $(document).ready(function(){
 		location:"Bridgeport, CT",
 		time:"7pm 9pm"}]
 	
-	var index = shows.length;
-	var i = 0;
-	
-	setInterval(function(){
-		if (i == index-1){
-			apply(i,shows);
-			i = 0;
-		}
-		else{
-			apply(i,shows)
-			i = i +1;
-		}
-		
-	},4000);
-	
 });
 
 

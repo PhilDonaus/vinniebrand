@@ -141,6 +141,14 @@ body {
 	content: '';
 }*/
 
+html:not([data-scroll='0']) {
+  #in {
+    position: fixed;
+    top:0;
+  }
+}
+
+
 .hover-menu {
 	position:absolute;
 	z-index: 10;
@@ -226,7 +234,7 @@ body {
 	top:5%;
 	left:5%;
 	z-index: 20;
-	border: solid white 2px;
+	border: solid white 5px;
 	margin: auto;
 }
 
@@ -249,6 +257,7 @@ body {
 	size:auto;
 	min-width:100%;
 	min-height: 100%;
+	max-height:100%;
 	margin: 0;
 	overflow: hidden;
 	position:relative;
@@ -291,7 +300,6 @@ body {
 }
 
 .info-box {
-	visibility: hidden;
 	position:absolute;
 	z-index:10;
 	left: 50%;
@@ -324,3 +332,6 @@ body {
 	background-color: rgba(255,255,255,0.3);
 }
 
+.card-text {
+	text-overflow: ellipsis;
+}

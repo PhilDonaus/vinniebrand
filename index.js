@@ -43,19 +43,19 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	var infobox = document.getElementById("infocenter");
-
-	var shows = [
-		{name:"Stress Factory", 
-		location:"New Brunswick, NJ",
-		time: "7pm, 9pm, 11pm"},
-		{name:"Carnegie Hall",
-		location:"New York City, NY",
-		time: "7pm, 10pm"},
-		{name:"Stress Factory",
-		location:"Bridgeport, CT",
-		time:"7pm 9pm"}]
+	$("#navwrap").data("top", $("#navwrap").offset().top); // set original position on load
+	$(window).scroll(fixDiv);
 	
 });
+
+function fixDiv() {
+    var $div = $("#navwrap");
+    if ($(window).scrollTop() > $div.data("top")) { 
+        $div.css({'position': 'fixed', 'top': '50px', 'width': '100%'}); 
+    }
+    else {
+        $div.css({'position': 'absolute', 'transform': 'translate(-50%,-50%)','right':'50vw','top':'90%'});
+    }
+}
 
 

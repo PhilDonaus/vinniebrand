@@ -179,13 +179,6 @@ html:not([data-scroll='0']) {
 	overflow:hidden;
 }
 
-.greytop{
-	background-color:rgba(0,0,0,0);
-	transform: translate(0,50%);
-	border:none;
-
-}
-
 .main-menu{
 	vertical-align: middle;
 	margin:auto;
@@ -288,12 +281,15 @@ html:not([data-scroll='0']) {
 .float-array {
 	display:flex;
 	flex-flow:column;
-	padding:10px;
+	padding:5px;
 	margin:auto;
-
+	height:100%;
+	align-items: stretch;
 }
 
 .card {
+	max-height: 200px;
+	flex-shrink:1;
 	border:0px;
 	background-color: #000;
 
@@ -335,3 +331,17 @@ html:not([data-scroll='0']) {
 .card-text {
 	text-overflow: ellipsis;
 }
+
+
+.menu-window {
+	
+
+}
+
+.menu-pane {
+	border: solid red 1px;
+	height: 100%;
+	width: 100%;
+	min-height:100px;
+}
+

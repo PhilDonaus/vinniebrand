@@ -54,7 +54,7 @@ function fixDiv() {
         $div.css({'position': 'fixed', 'top': '50px', 'width': '100%'}); 
     }
     else {
-        $div.css({'position': 'absolute', 'transform': 'translate(-50%,-50%)','right':'50vw','top':'90%'});
+        $div.css({'position': 'absolute', 'transform': 'translate(-50%,-50%)','top':'90%'});
     }
 }
 

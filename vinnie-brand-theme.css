@@ -73,6 +73,10 @@ body {
 	background-size: 2px 2px;
 }
 
+.dotted img {
+	z-index: -1
+}
+
 .img {}
 
 .fit img {
@@ -87,7 +91,7 @@ body {
 	transform: translate(-50%, -50%);
 	overflow: hidden;
 	background: rgba(127, 127, 127, 0.5);
-	z-index:-1;
+	
 
 
 }
@@ -271,7 +275,7 @@ html:not([data-scroll='0']) {
 	padding-left:40px;
 	padding-right: 40px;
 	font-family: Trebuchet MS;
-	transform:translate(0%,-50%);
+	transform:translate(-10%,-50%);
 }
 
 .negative-space {
@@ -339,9 +343,39 @@ html:not([data-scroll='0']) {
 }
 
 .menu-pane {
-	border: solid red 1px;
+	margin: 10px;
 	height: 100%;
 	width: 100%;
-	min-height:100px;
+	min-height:24vh;
+	min-width:15vw;
+
 }
 
+.menu-pane h2 {
+	position:relative;
+	top:50%;
+	z-index: 10;
+}
+
+.X {
+	background:none;
+	border:none;
+	font-size: 40px;
+	color:white;
+	font-style: bold;
+	transition: 0.6s ease;
+	right:0;
+}
+
+.X:hover{
+	color:black;
+	background-color: white;
+}
+
+.modal-dialog {
+	min-width:80vw;
+}
+
+.level img{
+	z-index: 0;
+}
